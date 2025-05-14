@@ -1,0 +1,8 @@
+<div *ngIf="isDataLoaded; else loading">
+    <!-- Tu componente de gráfico va aquí -->
+    <app-chart></app-chart>
+  </div>
+  
+  <ng-template #loading>
+    <div>Cargando gráfico...</div>
+  </ng-template>
